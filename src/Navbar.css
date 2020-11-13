@@ -1,0 +1,75 @@
+.navbar {
+  float: 1px;
+  z-index: 1;
+  height: 30px;
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  /* Animations */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.navbar__black {
+  background-color: #111111;
+}
+
+.navbar__logo {
+  object-fit: contain;
+  width: 80px;
+  position: fixed;
+  left: 20px;
+}
+
+.navbar__avatar {
+  object-fit: contain;
+  width: 30px;
+  position: fixed;
+  top: 20px;
+  margin-left: 80px;
+}
+
+.navbar__options {
+  display: flex;
+  flex: 1;
+  margin-left: 140px;
+}
+
+.navbar__options > h3 {
+  color: lightgrey;
+  margin-right: 15px;
+  font-size: small;
+  cursor: pointer;
+}
+
+.navbar__options > h3:hover {
+  color: white;
+}
+
+.navbar__optionsright {
+  display: flex;
+  right: 60px;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 20px;
+}
+
+.navbar__optionsright > .MuiSvgIcon-root {
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.navbar__optionsright > .MuiSvgIcon-root:hover {
+  color: red;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__options {
+    display: none;
+  }
+}
